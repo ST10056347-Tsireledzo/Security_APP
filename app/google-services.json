@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574266418974",
+    "project_id": "muramba-2",
+    "storage_bucket": "muramba-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574266418974:android:56cf1c07e6ada440fa0b0f",
+        "android_client_info": {
+          "package_name": "com.example.muramba_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2LhlKEQRVCSvkZY9apU3sJVU_jtqEWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

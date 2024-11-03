@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Muramba_2</string>
+    <string-array name="company_services">
+        <item>Consulting</item>
+        <item>Access Control</item>
+        <item>Security Services</item>
+        <item>Emergency Response</item>
+    </string-array>
 </resources>

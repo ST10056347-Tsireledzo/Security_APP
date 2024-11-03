@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.muramba_2" />
+                  <option name="mobileSdkAppId" value="1:574266418974:android:56cf1c07e6ada440fa0b0f" />
+                  <option name="projectId" value="muramba-2" />
+                  <option name="projectNumber" value="574266418974" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

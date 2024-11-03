@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Contact_us">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a subject"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/subjectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/company_services"/>
+
+    <EditText
+        android:id="@+id/queryMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your query"
+        android:minHeight="120dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/sendQueryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Query"/>
+</LinearLayout>

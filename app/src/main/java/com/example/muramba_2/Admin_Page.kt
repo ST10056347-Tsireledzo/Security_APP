@@ -1,5 +1,6 @@
 package com.example.muramba_2
 
+import AdminSOSAlerts
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,11 +37,12 @@ class Admin_Page : AppCompatActivity() {
                 val intent = Intent(this, AdminQueries::class.java)
                 startActivity(intent)
             }
-
             viewSOSAlertsButton.setOnClickListener {
-                // Display SOS alerts (implement Firebase Firestore retrieval here)
-                Toast.makeText(this, "Display SOS alerts.", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, AdminSOSAlerts::class.java)
+                startActivity(intent)
             }
+
+
         }
 
     }

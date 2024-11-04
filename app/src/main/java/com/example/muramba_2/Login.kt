@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import org.w3c.dom.Text
 
 class Login : AppCompatActivity() {
     private lateinit var emailEditText: EditText
@@ -25,12 +24,12 @@ class Login : AppCompatActivity() {
         emailEditText = findViewById(R.id.email)
         passwordEditText = findViewById(R.id.password)
         loginButton = findViewById(R.id.login)
-        link= findViewById(R.id.tv_register)
+        link = findViewById(R.id.tv_register)
 
         auth = FirebaseAuth.getInstance()
 
         link.setOnClickListener {
-            // Navigate to the login activity
+            // Navigate to the registration activity
             startActivity(Intent(this, MainActivity::class.java))
         }
 
@@ -48,11 +47,21 @@ class Login : AppCompatActivity() {
             return
         }
 
+        // Check if the user is the admin
+        if (email == "admin@gmail.com" && password == "admin1234") {
+            Toast.makeText(this, "Welcome, Admin!", Toast.LENGTH_SHORT).show()
+            // Navigate to the AdminActivity
+            startActivity(Intent(this, Admin_Page::class.java))
+            finish() // Close the login activity
+            return
+        }
+
+        // Proceed with regular Firebase authentication for normal users
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login successful.", Toast.LENGTH_SHORT).show()
-                    // Navigate to the home activity
+                    // Navigate to the home activity for regular users
                     startActivity(Intent(this, Navigation::class.java))
                     finish() // Close the login activity
                 } else {

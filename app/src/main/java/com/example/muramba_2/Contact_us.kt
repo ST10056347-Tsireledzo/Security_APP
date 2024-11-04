@@ -44,14 +44,17 @@ class Contact_us : AppCompatActivity() {
 
     private fun sendQuery(subjectSpinner: Spinner, queryMessage: EditText) {
         val userEmail = auth.currentUser?.email ?: "No Email"
+        val userId = auth.currentUser?.uid ?: "No UserID" // Get user ID
         val subject = subjectSpinner.selectedItem.toString()
         val message = queryMessage.text.toString().trim()
 
         if (message.isNotEmpty()) {
             val queryData = mapOf(
                 "email" to userEmail,
+                "userId" to userId, // Store user ID for filtering later
                 "subject" to subject,
                 "message" to message,
+                "response" to "", // Placeholder for admin's response
                 "timestamp" to System.currentTimeMillis()
             )
 

@@ -231,15 +231,16 @@
     <!-- Circular Red Panic Button at the Bottom -->
     <ImageButton
         android:id="@+id/panicButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingTop="20dp"
         android:backgroundTint="#FF0000"
         android:scaleType="centerInside"
-        android:src="@drawable/panic_icon"
+        android:src="@drawable/sos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

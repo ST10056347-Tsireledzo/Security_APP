@@ -8,8 +8,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.cardview.widget.CardView
-
+private lateinit var panicButtonHelper: Panic_Button
 class Home : Fragment() {
 
     override fun onCreateView(
@@ -22,7 +23,7 @@ class Home : Fragment() {
 
         // Consult Page
         view.findViewById<CardView>(R.id.cardConsult).setOnClickListener {
-            val intent = Intent(activity, Consult::class.java)
+            val intent = Intent(activity, Messages::class.java)
             startActivity(intent)
         }
 
@@ -55,7 +56,18 @@ class Home : Fragment() {
             val intent = Intent(activity, Access_Control::class.java)
             startActivity(intent)
         }
+        // Initialize PanicButtonHelper
+        panicButtonHelper = Panic_Button(requireContext())
+
+        // Set up long-press listener
+        val panicButton = view.findViewById<ImageButton>(R.id.panicButton)
+        panicButton.setOnLongClickListener {
+            panicButtonHelper.handleLongPress()
+            true // return true to indicate the event is handled
+        }
 
         return view
     }
+
+
 }

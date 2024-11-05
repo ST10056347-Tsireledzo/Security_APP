@@ -54,7 +54,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Consult"
+                    android:text="Messeges"
                     android:textAllCaps="true"
                     android:textColor="#FF8BC34A"
                     android:textSize="14sp"

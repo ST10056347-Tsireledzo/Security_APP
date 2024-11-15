@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".Contact_us">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select a subject"
-        android:textSize="18sp"/>
-
-    <Spinner
-        android:id="@+id/subjectSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/company_services"/>
-
-    <EditText
-        android:id="@+id/queryMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your query"
-        android:minHeight="120dp"
-        android:gravity="top"
-        android:inputType="textMultiLine"/>
-
-    <Button
-        android:id="@+id/sendQueryButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send Query"/>
-</LinearLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--  CardView wrapping the form layout  -->
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bouncyCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_margin="24dp" app:cardCornerRadius="16dp" app:cardElevation="8dp" app:cardBackgroundColor="#ffffff">
+        <!--  Form contents inside LinearLayout  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="16dp">
+            <!--  TextView for the subject label  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select a subject" android:textColor="@color/blue" android:textSize="18sp" android:layout_marginBottom="8dp"/>
+            <!--  Spinner for selecting a subject  -->
+            <Spinner android:id="@+id/subjectSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/company_services" android:layout_marginBottom="16dp"/>
+            <!--  EditText for entering a query message  -->
+            <EditText android:id="@+id/queryMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter your query" android:minHeight="120dp" android:gravity="top" android:inputType="textMultiLine" android:layout_marginBottom="16dp"/>
+            <!--  Button to send the query  -->
+            <Button android:id="@+id/sendQueryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send Query" android:backgroundTint="@color/blue"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

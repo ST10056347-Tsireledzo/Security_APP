@@ -1,9 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".About_us">
+
+    <!-- Main Container LinearLayout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal">
+
+        <!-- CardView for the "ABOUT US" title -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="ABOUT US:"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for the "About Us" content -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:id="@+id/AcommodateLabel11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muramba Security Service, established in 2012, began as a humble endeavor and has since evolved into a distinguished provider of security guards, electronic security installations, and CCTV systems. Over the span of 12 years, our dedication to excellence and commitment to safeguarding our clients has solidified our reputation in the industry. Our expertise, honed over more than a decade, ensures that our clients receive unparalleled security solutions and services. The trust placed in us is evident, with a significant portion of our business stemming from referrals, a testament to our reliability and proficiency."
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

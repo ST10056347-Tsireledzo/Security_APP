@@ -44,7 +44,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#304FFE"> <!-- Changed to wrap_content -->
+                    android:background="@color/blue"> <!-- Changed to wrap_content -->
 
                     <!-- ImageView -->
                     <ImageView
@@ -65,7 +65,7 @@
                         android:gravity="center"
                         android:text="Installation Of CCTV"
                         android:textAllCaps="true"
-                        android:textColor="#FF8BC34A"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/image_view"
@@ -110,7 +110,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#304FFE"> <!-- Changed to wrap_content -->
+                    android:background="@color/blue"> <!-- Changed to wrap_content -->
 
                     <!-- ImageView -->
                     <ImageView
@@ -131,7 +131,7 @@
                         android:gravity="center"
                         android:text="Body Guard Services"
                         android:textAllCaps="true"
-                        android:textColor="#FF8BC34A"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/image_view2"
@@ -174,7 +174,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#304FFE"> <!-- Changed to wrap_content -->
+                    android:background="@color/blue"> <!-- Changed to wrap_content -->
 
                     <!-- ImageView -->
                     <ImageView
@@ -195,7 +195,7 @@
                         android:gravity="center"
                         android:text="Access Control Solutions"
                         android:textAllCaps="true"
-                        android:textColor="#FF8BC34A"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/image_view3"
@@ -239,7 +239,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#304FFE">
+                    android:background="@color/blue">
 
                     <!-- ImageView -->
                     <ImageView
@@ -260,7 +260,7 @@
                         android:gravity="center"
                         android:text="Electronic Security System"
                         android:textAllCaps="true"
-                        android:textColor="#FF8BC34A"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/image_view4"
@@ -305,7 +305,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#304FFE"> <!-- Changed to wrap_content -->
+                    android:background="@color/blue"> <!-- Changed to wrap_content -->
 
                     <!-- ImageView -->
                     <ImageView
@@ -326,7 +326,7 @@
                         android:gravity="center"
                         android:text="Armed Response"
                         android:textAllCaps="true"
-                        android:textColor="#FF8BC34A"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/image_view5"

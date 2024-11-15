@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,9 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="128dp"
         android:src="@drawable/company"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"/>
 
     <!-- Main Dashboard Grid -->
     <GridLayout
@@ -27,7 +28,9 @@
         android:columnCount="2"
         app:layout_constraintTop_toBottomOf="@id/companyLogo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <!-- Card 1 - com.example.muramba_2.Consult -->
         <androidx.cardview.widget.CardView
@@ -54,9 +57,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Messeges"
+                    android:text="MESSAGES"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -89,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text="Connect"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -122,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:text="About Us"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -155,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="Services"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -186,9 +189,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Us"
+                    android:text="CONSULT"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -219,9 +222,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Access Control"
+                    android:text="ACCESS CONTROL"
                     android:textAllCaps="true"
-                    android:textColor="#FF8BC34A"
+                    android:textColor="@color/blue"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -231,16 +234,16 @@
     <!-- Circular Red Panic Button at the Bottom -->
     <ImageButton
         android:id="@+id/panicButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="62dp"
+        android:layout_height="84dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:paddingTop="20dp"
         android:backgroundTint="#FF0000"
+        android:paddingTop="20dp"
         android:scaleType="centerInside"
         android:src="@drawable/sos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

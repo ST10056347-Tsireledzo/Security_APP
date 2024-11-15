@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Muramba_2"
         tools:targetApi="31">
         <activity
+            android:name=".Connect"
+            android:exported="false" />
+        <activity
+            android:name=".Access_Control"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSOSAlerts"
+            android:exported="false" />
+        <activity
             android:name=".Messages"
             android:exported="false" />
         <activity

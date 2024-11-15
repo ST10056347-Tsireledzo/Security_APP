@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="#e4e4e4">
 
-    <!-- CardView for subject, message, and response TextViews -->
+    <!-- CardView for user email and location -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -24,34 +24,25 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-            <!-- Subject Text -->
+            <!-- User Email Text -->
             <TextView
-                android:id="@+id/subjectTextView"
-                android:text="Subject"
+                android:id="@+id/userEmailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@color/blue"
-                android:layout_marginBottom="8dp"/>
-
-            <!-- Message Text -->
-            <TextView
-                android:id="@+id/messageTextView"
-                android:text="Message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:text="User email"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Response Text -->
+            <!-- Location Text -->
             <TextView
-                android:id="@+id/responseTextView"
-                android:text="Response"
+                android:id="@+id/locationText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/holo_red_dark"
+                android:text="Location"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
                 android:layout_marginBottom="8dp"/>
 
         </LinearLayout>
